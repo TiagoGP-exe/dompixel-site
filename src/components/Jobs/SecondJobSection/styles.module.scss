@@ -1,0 +1,101 @@
+.SecondJobSectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  min-height: 50vh;
+  background-color: #000;
+  position: relative;
+  color: #fff;
+
+  padding: 2rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.8);
+
+    backdrop-filter: blur(7px);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: clamp(1rem, 5vw + 1rem, 3rem);
+    line-height: 110%;
+    font-family: 'Montserrat', sans-serif;
+
+    b {
+      color: #027fe9;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    text-align: justify;
+
+    word-spacing: 0px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    max-width: 700px;
+
+    padding-top: 3rem;
+
+    img {
+      width: 70%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  object-fit: cover;
+  opacity: 1;
+  opacity: 0.1;
+
+  background: rgba(0, 0, 0, 0.85);
+}
+
+@media (max-width: 1024px) {
+  .SecondJobSectionContainer {
+    flex-direction: column;
+
+    &:after {
+      right: 0vh;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .SecondJobSectionContainer {
+    flex-direction: column;
+
+    &:after {
+      transform: scale(0.7);
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .FirstJobSectionContainer {
+    flex-direction: column;
+
+    &:after {
+      transform: scale(0.5);
+    }
+  }
+}

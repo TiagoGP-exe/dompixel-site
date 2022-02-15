@@ -1,0 +1,119 @@
+.homeSectionContent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  padding-top: 5rem;
+
+  padding-bottom: 120px;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #000;
+  background-size: cover;
+
+  background-image: url('../../../public/assets/background-default.png');
+  object-fit: cover;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
+    margin: 2rem 0;
+
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      flex: 1;
+      gap: 1rem;
+
+      &:first-child {
+        margin-left: 2%;
+      }
+      > section {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+
+        div {
+          width: 100% !important;
+          display: grid;
+          gap: 0.4rem;
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+      }
+
+      h1 {
+        text-align: center;
+        font-size: clamp(1rem, 7vw + 1rem, 4rem);
+        line-height: 110%;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.79);
+
+        b {
+          color: #027fe9;
+        }
+      }
+      p {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .homeSectionContent {
+    gap: 2rem;
+
+    main {
+      div {
+        aside {
+          width: 100%;
+        }
+        // h1 {
+        //   font-size: 1.75rem;
+        // }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .homeSectionContent {
+    main {
+      flex-direction: column;
+      div {
+        align-items: center;
+        &:last-child {
+          width: 150px;
+        }
+
+        > aside {
+          width: 260px;
+        }
+
+        > section {
+          display: flex;
+          max-width: 100%;
+        }
+
+        // h1 {
+        //   font-size: 1.5rem;
+        // }
+        p {
+          font-size: 0.8rem;
+          max-width: 280px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.ContainerCertificates {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(22, 23, 36);
+  padding: 2rem;
+
+  header {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 1024px;
+
+    img {
+      width: 180px;
+    }
+
+    margin-bottom: 2rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1024px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  h1 {
+    color: rgb(243, 243, 243);
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: clamp(1rem, 5vw + 1rem, 3rem);
+    line-height: 110%;
+    font-family: 'Montserrat', sans-serif;
+
+    b {
+      color: #027fe9;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 500px) {
+}
+
+@media (max-width: 320px) {
+}

@@ -1,0 +1,60 @@
+.TestimonialContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  background-color: #fff;
+  padding: 5rem 0rem;
+
+  min-height: 80vh;
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  main {
+    display: grid;
+    max-width: 1024px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+
+    width: 100%;
+  }
+
+  p {
+    text-align: center;
+    width: max(350px, 30%);
+  }
+}
+
+.TestimonialCardContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #fff;
+  border-radius: 1rem;
+  width: min(300px, 90%);
+  padding: 2rem 1rem;
+  margin-top: 6rem;
+
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+
+  p {
+    text-align: centers;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  header {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+  }
+}

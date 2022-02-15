@@ -1,0 +1,102 @@
+.AboutSectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 3rem 0;
+
+  min-height: 100vh;
+  gap: 8vh;
+
+  .AboutSectionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+
+    > h1 {
+      font-size: clamp(1rem, 3vw + 1rem, 3rem);
+      line-height: 140%;
+      text-align: center;
+      color: #1a2b4b;
+      max-width: 1280px;
+
+      span {
+        color: #027fe9;
+      }
+    }
+
+    > p {
+      font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
+      color: #464345;
+      // max-width: 90%;
+      text-align: center;
+    }
+  }
+}
+
+.AboutCard {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-items: center;
+  max-width: 250px;
+  max-height: 250px;
+  padding: 2rem 0;
+
+  transition: all 0.35s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    width: 80%;
+    text-align: center;
+  }
+
+  &:hover {
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+
+  border-radius: 20px;
+}
+
+.ContentAboutCard {
+  width: 90%;
+  max-width: 1560px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  justify-items: center;
+  margin-top: 3rem;
+  gap: 2.5rem 0;
+}
+
+@media (max-width: 1024px) {
+  .AboutCard {
+    h3 {
+      font-size: 1.45rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .AboutSectionContainer {
+    .AboutSectionContent {
+      > p {
+        max-width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .ContentAboutCard {
+    flex-direction: column;
+  }
+}

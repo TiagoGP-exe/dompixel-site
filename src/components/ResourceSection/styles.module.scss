@@ -1,0 +1,110 @@
+.ResourceContainer {
+  background-color: #31405d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // padding: 5rem 3rem;
+  min-height: 100vh;
+
+  color: #fff;
+  border-radius: 0.5rem;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    opacity: 0.75;
+    text-align: center;
+  }
+
+  main {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    aside {
+      position: relative;
+      width: 240px;
+      height: 400px;
+    }
+  }
+}
+
+.reverseContentResource {
+  flex-direction: row-reverse;
+}
+
+.ResourceCardContainer {
+  flex: 1;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    text-align: right;
+  }
+
+  p {
+    text-align: right;
+    max-width: 90%;
+  }
+
+  .reverseTextResource {
+    h3 {
+      text-align: start;
+    }
+
+    p {
+      text-align: start;
+    }
+  }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .ResourceContainer {
+    main {
+      gap: 1rem 0;
+      flex-direction: column;
+      section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .ResourceContainer {
+    main {
+      section {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    h1 {
+    }
+  }
+}
