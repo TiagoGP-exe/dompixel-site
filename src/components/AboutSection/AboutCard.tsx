@@ -24,7 +24,9 @@ const AboutCard: FC<AboutCardProps> = ({ title, description }) => {
   return (
     <div
       ref={ref}
-      className={`${styles.AboutCard} ${isValid && 'fadeUpAnimation '}`}
+      className={`${styles.AboutCard} ${
+        isValid && 'fadeUpAnimation  glowAnimation'
+      }`}
     >
       <HiUserCircle size={72} style={{ marginBottom: 10 }} />
       <h3>{title || initialTitle}</h3>

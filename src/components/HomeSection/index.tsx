@@ -30,8 +30,8 @@ const HomeSection = () => {
         <button
           onClick={() => router.push('#about')}
           className={`blue-button  ${
-            isValid && 'fadeUpAnimation'
-          } glowAnimation`}
+            isValid && 'fadeUpAnimation glowAnimation'
+          }`}
         >
           QUERO VENDER MAIS
         </button>

@@ -24,9 +24,11 @@ const DoubtSection = () => (
           É natural sentir-se inseguro com tantas promessas, talvez você já
           tenha tido experiências frustrantes. Mas a verdade é que para
           determinar se seu projeto terá sucesso, são necessários alguns
-          pré-requisitos. Nós da DomPixel vamos identificar se podemos ajudar a
-          alavancar o seu negócio. Se de alguma forma não pudermos contribuir
-          com seu sucesso, seremos transparentes em nosso diagnóstico.
+          pré-requisitos.
+          <br />
+          <br /> Nós da DomPixel vamos identificar se podemos ajudar a alavancar
+          o seu negócio. Se de alguma forma não pudermos contribuir com seu
+          sucesso, seremos transparentes em nosso diagnóstico.
         </p>
       </div>
       <div>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React, { FC, useRef } from 'react'
 import { useIntersectionObserver } from 'usehooks-ts'
 import { removeAccents } from '../../utils/string'
@@ -26,7 +27,7 @@ const TeamCard: FC<TeamCardProps> = ({ name, description }) => {
       className={` ${styles.TeamCardContainer} ${isValid && 'fadeUpAnimation'}`}
     >
       <header>
-        <img src={`/assets/people/${correctImage}.png`} alt='correctImage' />
+        <img src={`/assets/people/${correctImage}.png`} alt={correctImage} />
       </header>
       <div>
         <h2>{name}</h2>
