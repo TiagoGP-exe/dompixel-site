@@ -110,12 +110,12 @@
 .FooterLogo {
   position: relative;
   width: 200px;
-  height: calc(200px * 0.3);
+  height: 60px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 

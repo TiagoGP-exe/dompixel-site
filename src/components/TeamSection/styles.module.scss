@@ -36,6 +36,24 @@
 }
 
 .TeamCardContainer {
+  h2,
+  p {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      letter-spacing: 0.1rem;
+    }
+
+    p {
+      letter-spacing: 0.2rem;
+    }
+  }
   div {
     display: flex;
     flex-direction: column;
@@ -43,6 +61,7 @@
   }
   header {
     img {
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       height: min(420px, 80%);
       width: 280px;
     }
