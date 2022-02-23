@@ -13,7 +13,7 @@ import TeamSection from '../components/TeamSection'
 import TestionialSection from '../components/TestimonialSection'
 
 const Home: NextPage = () => (
-  <div style={{ minHeight: '100vh', backgroundColor: '#F2F3F7' }}>
+  <div className='containerLandingPage'>
     <HomeSection />
     <AboutSection />
     <FirstJobSection />

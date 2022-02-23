@@ -37,7 +37,11 @@ $desktop-width: 1024px;
     background-color: #ccc;
   }
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+}
+
+.containerLandingPage {
+  min-height: 100vh;
+  background-color: '#F2F3F7';
 }
 
 body {
