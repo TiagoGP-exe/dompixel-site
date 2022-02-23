@@ -29,7 +29,9 @@ const HomeSection = () => {
 
         <button
           onClick={() => router.push('#about')}
-          className={`blue-button  ${isValid && 'fadeUpAnimation'}`}
+          className={`blue-button  ${
+            isValid && 'fadeUpAnimation'
+          } glowAnimation`}
         >
           QUERO VENDER MAIS
         </button>

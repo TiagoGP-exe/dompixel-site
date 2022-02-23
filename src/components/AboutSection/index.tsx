@@ -26,31 +26,26 @@ const AboutSection = () => {
         </h1>
         <p className={`${isValid && 'fadeUpAnimation '}`}>
           Somos uma assessoria completa e possuímos a maior diversidade de
-          skills do mercado. <br />
-          Não visamos apenas uma publicidade que gera curtidas e comentários,
-          mas sim aquela que vende.
+          skills do mercado. Não visamos apenas uma publicidade que gera
+          curtidas e comentários, mas sim aquela que vende.
         </p>
 
         <p className={`${isValid && 'fadeUpAnimation '}`}>
           Acreditamos que marketing só é marketing quando vende algo, para que
-          isso seja possível, <br /> nós nos envolvemos estrategicamente na
-          operação dos nossos clientes, <br /> desde o treinamento da equipe de
-          atendimento até a consultoria de pós-venda.
+          isso seja possível, nós nos envolvemos estrategicamente na operação
+          dos nossos clientes, desde o treinamento da equipe de atendimento até
+          a consultoria de pós-venda.
         </p>
       </div>
 
       <button
         onClick={() => route.push('#domMethod')}
-        className={`blue-button  ${isValid && 'fadeUpAnimation'}`}
+        className={`blue-button  ${
+          isValid && 'fadeBottomAnimation'
+        } glowAnimation`}
       >
-        CONHEÇA O MÉTODO DOM
+        MÉTODO DOM
       </button>
-
-      {/* <div className={styles.ContentAboutCard}>
-        {numberOfCards.map(item => (
-          <AboutCard key={String(item)} />
-        ))}
-      </div> */}
     </section>
   )
 }

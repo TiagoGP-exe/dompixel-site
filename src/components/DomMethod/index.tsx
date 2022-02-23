@@ -13,7 +13,7 @@ const DomMethod = () => {
 
   return (
     <section id='domMethod' className={styles.DomMethodContainer}>
-      <h1 ref={ref} className={`${isValid && 'fadeUpAnimation '}`}>
+      <h1 ref={ref} className={`${isValid && 'fadeBottomAnimation '}`}>
         MÉTODO <b>DOM</b>
       </h1>
       <main>

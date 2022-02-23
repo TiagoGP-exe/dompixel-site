@@ -5,9 +5,9 @@
   width: 100%;
 
   min-height: 50vh;
-  background-color: #000;
+  background-color: #333539;
   position: relative;
-  color: #fff;
+  color: #f0f0f0;
   transition: all 1s ease;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 
@@ -34,7 +34,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.75);
 
     backdrop-filter: blur(7px);
   }
@@ -63,9 +63,6 @@
   height: 100%;
   z-index: -2;
   object-fit: cover;
-  opacity: 0.1;
-
-  background: rgba(0, 0, 0, 0.85);
 }
 
 @media (max-width: 1024px) {

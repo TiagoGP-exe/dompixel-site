@@ -37,6 +37,7 @@ $desktop-width: 1024px;
     background-color: #ccc;
   }
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -159,6 +160,11 @@ p {
   }
 }
 
+.glowAnimation {
+  animation: glow 3s infinite;
+  transition-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
 .blue-button {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
@@ -170,14 +176,10 @@ p {
   color: #fff;
   transition: 0.6s all cubic-bezier(0.25, 1, 0.5, 1);
 
-  width: min(350px, 90%);
+  width: min(350px, 70vw);
 
   &:hover {
-    -webkit-box-shadow: 0px 0px 72px 5px rgba(2, 125, 233, 0.9);
-    -moz-box-shadow: 0px 0px 72px 5px rgba(2, 125, 233, 0.9);
-    box-shadow: 0px 0px 72px 5px rgba(2, 125, 233, 0.9);
     letter-spacing: 0.1rem;
-    transform: scale(1.1);
   }
 }
 
@@ -201,4 +203,19 @@ p {
   opacity: 1;
   background-size: 100% 100%;
   background-position: 0% 0%;
+}
+
+@keyframes glow {
+  0% {
+  }
+
+  50% {
+    -webkit-box-shadow: 0px 0px 72px 5px rgba(2, 125, 233, 0.9);
+    -moz-box-shadow: 0px 0px 72px 5px rgba(2, 125, 233, 0.9);
+    box-shadow: 0px 0px 72px 5px rgba(2, 125, 233, 0.9);
+
+    transform: scale(1.1);
+  }
+  100% {
+  }
 }

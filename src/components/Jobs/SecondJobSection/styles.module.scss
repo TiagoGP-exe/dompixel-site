@@ -5,21 +5,12 @@
   width: 100%;
 
   min-height: 50vh;
-  background-color: #000;
+  background-color: #04070c;
   position: relative;
-  color: #fff;
+  color: #f1f1f1;
 
   padding: 2rem;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  main {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: rgba(0, 0, 0, 0.8);
-
-    backdrop-filter: blur(7px);
-  }
 
   h1 {
     text-align: center;
@@ -66,7 +57,7 @@
   opacity: 1;
   opacity: 0.1;
 
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 @media (max-width: 1024px) {

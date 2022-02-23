@@ -25,7 +25,7 @@
   h1 {
     color: #fff;
     text-align: center;
-    font-size: clamp(1rem, 5vw + 1rem, 3rem);
+    font-size: clamp(1rem, 3vw + 1rem, 2.5rem);
     line-height: 110%;
     font-family: 'Montserrat', sans-serif;
     text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.79);
@@ -34,7 +34,6 @@
 
   p {
     color: rgb(232, 232, 232);
-    line-height: 1.6rem;
   }
 
   main {
@@ -42,7 +41,6 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    align-items: center;
     padding: 2rem;
     max-width: 1280px;
     z-index: 2;
@@ -53,6 +51,12 @@
       &:first-child {
         p {
           font-size: 1.2rem;
+        }
+      }
+
+      &:last-child {
+        p {
+          max-width: calc(100% - 50px);
         }
       }
 
@@ -77,4 +81,19 @@
 }
 
 @media (max-width: 588px) {
+  .DoubtSectionContainer {
+    main {
+      div {
+        flex: 1;
+
+        aside {
+          display: flex;
+          align-items: center;
+          padding: 0.5rem 0;
+          // justify-content: center;
+          gap: 0.75rem;
+        }
+      }
+    }
+  }
 }

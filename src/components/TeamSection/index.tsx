@@ -8,10 +8,6 @@ const numberOfCards: TeamCardProps[] = [
     description: 'Key Account Manager',
   },
   {
-    name: 'Anderson Caparróz',
-    description: 'CEO & Founder',
-  },
-  {
     name: 'Flávio Costa',
     description: 'Filmaker & Photographer',
   },
@@ -32,7 +28,11 @@ const numberOfCards: TeamCardProps[] = [
     description: 'Back-End Developer',
   },
   {
-    name: 'Tiago Guimarães Pinto',
+    name: 'Anderson Caparróz',
+    description: 'CEO & Founder',
+  },
+  {
+    name: 'Tiago Guimarães',
     description: 'Front-End Developer',
   },
 ]

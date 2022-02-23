@@ -10,7 +10,7 @@
   min-height: 80vh;
 
   h1 {
-    font-size: 2.5rem;
+    font-size: clamp(1rem, 3.5vw + 1rem, 4rem);
     text-align: center;
   }
 
@@ -18,7 +18,7 @@
     display: grid;
     max-width: 1024px;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
+
     justify-items: center;
 
     width: 100%;

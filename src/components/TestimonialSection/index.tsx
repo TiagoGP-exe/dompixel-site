@@ -11,6 +11,7 @@ const TestimonialInfos = [
       'Retratos',
       'Ensaios',
       'Foto Publicitária',
+      'Vídeos',
       'Fotos Still / Produtos.',
     ],
     img: 'icons_prodution.svg',
