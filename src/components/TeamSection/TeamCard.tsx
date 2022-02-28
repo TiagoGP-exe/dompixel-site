@@ -1,4 +1,6 @@
-import React, { FC } from 'react'
+import Image from 'next/image'
+import React, { FC, useRef } from 'react'
+import { useIntersectionObserver } from 'usehooks-ts'
 import { removeAccents } from '../../utils/string'
 import styles from './styles.module.scss'
 
@@ -11,8 +13,19 @@ const TeamCard: FC<TeamCardProps> = ({ name, description }) => {
   const indexImage = name.indexOf(' ')
   const correctImage = removeAccents(name).slice(0, indexImage).toLowerCase()
 
+  const ref = useRef<HTMLDivElement | null>(null)
+  const entry = useIntersectionObserver(ref, {
+    freezeOnceVisible: true,
+    threshold: 0,
+  })
+
+  const isValid = entry?.isIntersecting
+
   return (
-    <div className={` ${styles.TeamCardContainer}`}>
+    <div
+      ref={ref}
+      className={` ${styles.TeamCardContainer} ${isValid && 'fadeUpAnimation'}`}
+    >
       <header>
         <img src={`/assets/people/${correctImage}.png`} alt={correctImage} />
       </header>
