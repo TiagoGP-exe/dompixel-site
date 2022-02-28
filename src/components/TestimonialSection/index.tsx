@@ -58,10 +58,13 @@ const TestionialSection = () => {
       <h1 className={`${isValid && 'fadeBottomAnimation '}`}>
         O que a DomPixel faz?
       </h1>
-      {/* <p className={`${isValid && 'fadeUpAnimation '}`}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore.
-      </p> */}
+      <p className={`${isValid && 'fadeUpAnimation '}`}>
+        Vendas, performance, branding, dados e growth, são alguns de nossos
+        serviços que possuem metodologia própria em todas as etapas da jornada
+        de compra, atraindo e convertendo clientes para seu negócio. É por isso
+        que a DomPixel conta com o método científico de desenvolvimento e
+        crescimento, e com o apoio do nosso time de profissionais.
+      </p>
 
       <main>
         {TestimonialInfos.map(({ items, img, title }) => (

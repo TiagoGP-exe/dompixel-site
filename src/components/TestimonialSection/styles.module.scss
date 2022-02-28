@@ -24,9 +24,12 @@
     width: 100%;
   }
 
-  p {
+  > p {
     text-align: center;
-    width: max(350px, 30%);
+    line-height: 200%;
+    font-size: 1rem;
+    width: max(300px, 70%);
+    text-align: center;
   }
 }
 
