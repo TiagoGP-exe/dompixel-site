@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useRef } from 'react'
 import { useIntersectionObserver } from 'usehooks-ts'
@@ -34,13 +35,14 @@ const HomeSection = () => {
             Se conecte com seus potenciais <br /> clientes e escale suas
             <b> vendas. </b>
           </p>
-          <button
-            onClick={() => router.push('#about')}
-            className={`blue-button   glowAnimation
-            `}
-          >
-            QUERO VENDER MAIS
-          </button>
+
+          <Link href='https://bit.ly/dompixelagencia'>
+            <a>
+              <button className={`blue-button glowAnimation`}>
+                QUERO AJUDA PROFISSIONAL
+              </button>
+            </a>
+          </Link>
         </div>
       </main>
     </section>
