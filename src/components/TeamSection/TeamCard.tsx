@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import React, { FC } from 'react'
 import { removeAccents } from '../../utils/string'
 import styles from './styles.module.scss'
 

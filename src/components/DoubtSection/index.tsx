@@ -1,7 +1,6 @@
-import { useRouter } from 'next/router'
-import React from 'react'
 import { RiCheckboxCircleFill } from 'react-icons/ri'
 import styles from './styles.module.scss'
+import React from 'react'
 
 const wordsOfMarketing = [
   'Segurança para focar no seu negócio e deixar o marketing em boas mãos',

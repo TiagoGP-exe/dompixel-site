@@ -1,4 +1,3 @@
-import styled from '@emotion/styled/types/base'
 import { useRouter } from 'next/router'
 import React, { useRef } from 'react'
 import { useIntersectionObserver } from 'usehooks-ts'
