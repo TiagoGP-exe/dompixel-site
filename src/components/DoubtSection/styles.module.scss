@@ -6,20 +6,22 @@
   justify-content: center;
   align-items: center;
   position: relative;
-
-  background-attachment: fixed;
   background-color: #000;
-  background-size: cover;
+
   padding: 2rem 0;
 
-  background-image: url('../../../public/assets/background-example2.png');
-
-  > div {
+  &:before {
+    content: '';
     position: absolute;
+
     width: 100%;
     height: 100%;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.85);
+    background-attachment: fixed;
+    background-size: cover;
+
+    -webkit-filter: grayscale(100%) opacity(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) opacity(50%);
+    background-image: url('../../../public/assets/bg-doubtSection.jpg');
   }
 
   h1 {
@@ -51,6 +53,7 @@
       &:first-child {
         p {
           font-size: 1.2rem;
+          font-weight: 600;
         }
       }
 

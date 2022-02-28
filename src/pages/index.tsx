@@ -13,7 +13,7 @@ import TeamSection from '../components/TeamSection'
 import TestionialSection from '../components/TestimonialSection'
 
 const Home: NextPage = () => (
-  <div className='containerLandingPage'>
+  <>
     <HomeSection />
     <AboutSection />
     <FirstJobSection />
@@ -25,7 +25,7 @@ const Home: NextPage = () => (
     <TestionialSection />
     <DoubtSection />
     <Footer />
-  </div>
+  </>
 )
 
 export default Home

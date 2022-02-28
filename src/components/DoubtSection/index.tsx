@@ -40,7 +40,6 @@ const DoubtSection = () => (
         ))}
       </div>
     </main>
-    <div />
   </section>
 )
 

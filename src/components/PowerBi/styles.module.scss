@@ -1,55 +1,55 @@
 .ContainerPowerBi {
-  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   min-height: 80vh;
-  padding: 5rem 0;
-
-  padding-top: 5rem;
 
   background-attachment: fixed;
-  background-position: center;
-  background-color: #000;
+
   background-size: cover;
-
-  background-image: url('../../../public/assets/background-example.png');
+  z-index: -2;
+  background-image: url('../../../public/assets/bg-power-bi.png');
   object-fit: cover;
-
   color: #fff;
 
   h1 {
-    font-size: clamp(1rem, 3.5vw + 1rem, 4rem);
+    font-size: clamp(1rem, 2.5vw + 1rem, 3rem);
     line-height: 110%;
     margin-bottom: 1rem;
   }
 
-  > div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    p {
-      width: 80%;
-      text-align: justify;
-      font-size: 1rem;
-    }
-
+  main {
     max-width: 1280px;
-    margin-top: 2rem;
+    display: flex;
 
-    aside {
-      position: relative;
-      min-width: 200px;
-      width: min(650px, 90%);
-      height: calc(min(650px, 90vw) * 0.56);
-    }
+    > div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-    img {
-      max-height: 50vh;
+      p {
+        width: 80%;
+        text-align: justify;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      button {
+        z-index: 100;
+      }
+
+      margin-top: 2rem;
+
+      aside {
+        position: relative;
+      }
+
+      img {
+        max-height: 60vh;
+        max-width: 90%;
+      }
     }
   }
 }
@@ -63,6 +63,9 @@
 @media (max-width: 768px) {
   .ContainerPowerBi {
     flex-direction: column;
+    main {
+      flex-direction: column;
+    }
   }
 }
 

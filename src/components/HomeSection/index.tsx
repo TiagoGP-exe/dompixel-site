@@ -1,3 +1,4 @@
+import styled from '@emotion/styled/types/base'
 import { useRouter } from 'next/router'
 import React, { useRef } from 'react'
 import { useIntersectionObserver } from 'usehooks-ts'
@@ -17,11 +18,15 @@ const HomeSection = () => {
   return (
     <section ref={ref} id='home' className={styles.homeSectionContent}>
       <main>
+        <img src='/assets/logo.svg' alt='asd' className={`${isValid && 'fadeBottomAnimation '}`} />
+
         <div>
-          <h1 className={`${isValid && 'fadeBottomAnimation '}`}>
+          <h1 
+              className={`${isValid && 'fadeBottomAnimation '}`}>
             VENDA MAIS <br /> COM A PARCERIA <br /> ESTRATÉGICA DA <b>DOM</b>
           </h1>
-          <p className={`${isValid && 'fadeUpAnimation '}`}>
+          
+          <p  className={`${isValid && 'fadeUpAnimation '}`}>
             Se conecte com seus potenciais clientes e escale suas
             <b> vendas. </b>
           </p>
@@ -36,6 +41,7 @@ const HomeSection = () => {
           QUERO VENDER MAIS
         </button>
       </main>
+
     </section>
   )
 }

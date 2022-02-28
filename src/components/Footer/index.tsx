@@ -14,7 +14,7 @@ const Footer = () => {
             onClick={() => router.push('#home')}
             className={styles.FooterLogo}
           >
-            <Image layout='fill' src='/assets/dompixel-logo.png' />
+            <Image layout='fill' src='/assets/logo-blue.svg' />
           </div>
 
           <div>
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </aside>
       </main>
-      <p> DOMPIXEL TECNOLOGIA LTDA – CNPJ 36447174000144</p>
+      <p> © DOMPIXEL TECNOLOGIA LTDA – CNPJ 36.447.174/0001-44</p>
     </section>
   )
 }
