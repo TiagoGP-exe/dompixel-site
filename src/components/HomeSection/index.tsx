@@ -18,30 +18,33 @@ const HomeSection = () => {
   return (
     <section ref={ref} id='home' className={styles.homeSectionContent}>
       <main>
-        <img src='/assets/logo.svg' alt='asd' className={`${isValid && 'fadeBottomAnimation '}`} />
+        <img
+          src='/assets/logo.svg'
+          alt='asd'
+          className={`${isValid && 'fadeBottomAnimation '}`}
+        />
 
         <div>
-          <h1 
-              className={`${isValid && 'fadeBottomAnimation '}`}>
+          <h1 className={`${isValid && 'fadeBottomAnimation '}`}>
             VENDA MAIS <br /> COM A PARCERIA <br /> ESTRATÉGICA DA <b>DOM</b>
           </h1>
-          
-          <p  className={`${isValid && 'fadeUpAnimation '}`}>
-            Se conecte com seus potenciais clientes e escale suas
-            <b> vendas. </b>
-          </p>
         </div>
 
-        <button
-          onClick={() => router.push('#about')}
-          className={`blue-button  ${
-            isValid && 'fadeUpAnimation glowAnimation'
-          }`}
-        >
-          QUERO VENDER MAIS
-        </button>
+        <div>
+          <p className={`${isValid && 'fadeUpAnimation '}`}>
+            Se conecte com seus potenciais <br /> clientes e escale suas
+            <b> vendas. </b>
+          </p>
+          <button
+            onClick={() => router.push('#about')}
+            className={`blue-button  ${
+              isValid && 'fadeUpAnimation glowAnimation'
+            }`}
+          >
+            QUERO VENDER MAIS
+          </button>
+        </div>
       </main>
-
     </section>
   )
 }

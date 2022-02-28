@@ -34,7 +34,7 @@ const DoubtSection = () => (
       <div>
         {wordsOfMarketing.map(word => (
           <aside key={word}>
-            <RiCheckboxCircleFill size={32} color='#027fe9' />
+            <RiCheckboxCircleFill size={32} color=' var(--primary-color)' />
             <p>{word}</p>
           </aside>
         ))}

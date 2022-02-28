@@ -33,14 +33,14 @@
     font-family: 'Montserrat', sans-serif;
 
     b {
-      color: #027fe9;
+      color: var(--primary-color);
     }
   }
 
   h2 {
     display: flex;
     gap: 0.1rem;
-    color: #027fe9;
+    color: var(--primary-color);
 
     b {
       color: rgb(243, 243, 243);

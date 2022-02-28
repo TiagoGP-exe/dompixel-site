@@ -18,16 +18,25 @@
     background-position: center;
     background-size: cover;
 
-    -webkit-filter: grayscale(100%) opacity(50%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%) opacity(50%);
-
-    background-image: url('../../../public/assets/bg-section-1.jpeg');
+    background-image: url('../../../public/assets/bg-section-1.png');
   }
 
-  button {
-    position: absolute;
-    bottom: 20vh;
-    margin: 1rem;
+  h1 {
+    text-align: center;
+    font-size: clamp(1rem, 5vw + 1rem, 3rem);
+    line-height: 110%;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.79);
+
+    b {
+      color: var(--primary-color);
+    }
+  }
+
+  p {
+    line-height: 130%;
+    text-align: center;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
   }
 
   main {
@@ -52,40 +61,14 @@
       display: flex;
       flex-direction: column;
       color: #fff;
-      flex: 1;
       gap: 1rem;
+      flex: 1;
+      align-items: center;
 
-      &:first-child {
-        margin-left: 2%;
-      }
-      > section {
-        display: flex;
-        justify-content: flex-start;
-        position: relative;
-
-        div {
-          width: 100% !important;
-          display: grid;
-          gap: 0.4rem;
-          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        }
-      }
-
-      h1 {
-        text-align: center;
-        font-size: clamp(1rem, 5vw + 1rem, 3rem);
-        line-height: 110%;
-        font-family: 'Montserrat', sans-serif;
-        text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.79);
-
-        b {
-          color: #027fe9;
-        }
-      }
-      p {
-        font-size: clamp(1.2rem, 2vw, 1.5rem);
-        text-align: center;
-        line-height: 130%;
+      &:last-child {
+        gap: 1.75rem;
+        margin-top: 10vh;
+        margin-bottom: -10vh;
       }
     }
   }
@@ -95,12 +78,6 @@
   .homeSectionContent {
     gap: 2rem;
     position: relative;
-    button {
-      position: absolute;
-      bottom: 8vh;
-      margin: 1rem;
-    }
-
     main {
       div {
         aside {
@@ -114,24 +91,5 @@
 @media (max-width: 425px) {
   .homeSectionContent {
     min-height: 70vh;
-
-    main {
-      flex-direction: column;
-      div {
-        align-items: center;
-        &:last-child {
-          width: 150px;
-        }
-
-        > aside {
-          width: 260px;
-        }
-
-        > section {
-          display: flex;
-          max-width: 100%;
-        }
-      }
-    }
   }
 }
