@@ -31,10 +31,10 @@ const SecondJobSection = () => {
           marketing totalmente regionalizado.
         </p>
       </div>
-
+      {/* 
       <video autoPlay loop muted className={styles.video} playsInline>
         <source src='/assets/golfinho-azul.m4v' type='video/mp4' />
-      </video>
+      </video> */}
     </section>
   )
 }
