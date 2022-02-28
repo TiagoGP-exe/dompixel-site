@@ -12,6 +12,8 @@
   object-fit: cover;
   color: #fff;
 
+  padding: 2rem 0;
+
   h1 {
     font-size: clamp(1rem, 2.5vw + 1rem, 3rem);
     line-height: 110%;
@@ -22,6 +24,13 @@
     max-width: 1280px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    > button {
+      visibility: hidden;
+      opacity: 0;
+      display: none;
+    }
 
     > div {
       flex: 1;
@@ -46,7 +55,7 @@
 
       img {
         max-height: 60vh;
-        max-width: 90%;
+        max-width: 100%;
       }
     }
   }
@@ -63,6 +72,20 @@
     flex-direction: column;
     main {
       flex-direction: column;
+
+      div {
+        > button {
+          visibility: hidden;
+          opacity: 0;
+          display: none;
+        }
+      }
+
+      > button {
+        visibility: visible;
+        opacity: 1;
+        display: inline;
+      }
     }
   }
 }

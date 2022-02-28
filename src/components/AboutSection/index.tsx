@@ -26,15 +26,19 @@ const AboutSection = () => {
         </h1>
         <p className={`${isValid && 'fadeUpAnimation '}`}>
           Somos uma assessoria completa e possuímos a maior diversidade de
-          skills do mercado. Não visamos apenas uma publicidade que gera
-          curtidas e comentários, mas sim aquela que vende.
+          skills do mercado.
+          <b>
+            {' '}
+            Não visamos apenas uma publicidade que gera curtidas e comentários,
+            mas sim aquela que vende.
+          </b>
         </p>
 
         <p className={`${isValid && 'fadeUpAnimation '}`}>
-          Acreditamos que marketing só é marketing quando vende algo, para que
-          isso seja possível, nós nos envolvemos estrategicamente na operação
-          dos nossos clientes, desde o treinamento da equipe de atendimento até
-          a consultoria de pós-venda.
+          <b>Acreditamos que marketing só é marketing quando vende algo,</b>{' '}
+          para que isso seja possível, nós nos envolvemos estrategicamente na
+          operação dos nossos clientes, desde o treinamento da equipe de
+          atendimento até a consultoria de pós-venda.
         </p>
       </div>
 
@@ -44,7 +48,7 @@ const AboutSection = () => {
           isValid && 'fadeBottomAnimation'
         } glowAnimation`}
       >
-        MÉTODO DOM
+        CONHEÇA O MÉTODO DOM
       </button>
     </section>
   )
