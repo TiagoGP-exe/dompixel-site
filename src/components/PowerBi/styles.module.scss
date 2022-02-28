@@ -26,10 +26,12 @@
     justify-content: space-between;
     align-items: center;
 
-    > button {
-      visibility: hidden;
-      opacity: 0;
-      display: none;
+    > a {
+      > button {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+      }
     }
 
     > div {
@@ -81,10 +83,12 @@
         }
       }
 
-      > button {
-        visibility: visible;
-        opacity: 1;
-        display: inline;
+      > a {
+        > button {
+          visibility: visible;
+          opacity: 1;
+          display: inline;
+        }
       }
     }
   }
