@@ -28,6 +28,7 @@ const AboutSection = () => {
           Somos uma assessoria completa e temos a maior diversidade de serviços
           do mercado.
           <b>
+            {' '}
             Não visamos a estratégia que resulte apenas em curtidas e
             comentários, mas aquela que potencialize suas vendas.
           </b>

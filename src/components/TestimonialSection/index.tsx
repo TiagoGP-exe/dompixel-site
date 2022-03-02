@@ -14,7 +14,7 @@ const TestimonialInfos = [
       'Vídeos',
       'Fotos Still / Produtos.',
     ],
-    img: 'icons_prodution.svg',
+    img: 'prod.svg',
   },
   {
     title: 'Assessoria de Marketing',
@@ -26,7 +26,7 @@ const TestimonialInfos = [
       'Branding',
       'Business Intelligence.',
     ],
-    img: 'icons_mkt.svg',
+    img: 'mark.svg',
   },
   {
     title: 'Desenvolvimento Web e Mobile',
@@ -40,7 +40,7 @@ const TestimonialInfos = [
       'Plataformas Dashbord.',
       'Power BI',
     ],
-    img: 'icons_dev.svg',
+    img: 'dev.svg',
   },
 ]
 

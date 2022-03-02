@@ -3,13 +3,13 @@ import styles from './styles.module.scss'
 import React from 'react'
 
 const wordsOfMarketing = [
-  'Segurança para focar no seu negócio e deixar o marketing em boas mãos',
-  'Tenha métodos assertivos de prospecção e de fechamento de vendas',
-  'Aumente o market share da sua empresa',
-  'Aumente o seu NPS',
+  'Marketing em boas mãos',
+  'Métodos assertivos de prospecção e de fechamento de vendas',
+  'Aumento do Market Share da sua empresa',
+  'Aumento do seu NPS',
   'Controle dos números do seu investimento',
   'Proatividade e agilidade da DOM',
-  'Melhore a tomada de decisões com números precisos.',
+  'Melhora na tomada de decisões com números precisos',
 ]
 
 const DoubtSection = () => (
@@ -20,14 +20,12 @@ const DoubtSection = () => (
     <main>
       <div>
         <p>
-          É natural sentir-se inseguro com tantas promessas, talvez você já
-          tenha tido experiências frustrantes. Mas a verdade é que para
-          determinar se seu projeto terá sucesso, são necessários alguns
-          pré-requisitos.
-          <br />
-          <br /> Nós da DomPixel vamos identificar se podemos ajudar a alavancar
-          o seu negócio. Se de alguma forma não pudermos contribuir com seu
-          sucesso, seremos transparentes em nosso diagnóstico.
+          É natural sentir-se inseguro com tantas promessas, principalmente se
+          você já passou por experiências frustrantes. Mas a verdade é que para
+          determinar o sucesso do seu projeto, são necessários alguns
+          pré-requisitos. <br />
+          <br /> Se de alguma forma não pudermos contribuir com seu sucesso,
+          seremos transparentes em nosso diagnóstico.
         </p>
       </div>
       <div>
