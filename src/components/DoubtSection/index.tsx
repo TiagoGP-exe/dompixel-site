@@ -15,7 +15,8 @@ const wordsOfMarketing = [
 const DoubtSection = () => (
   <section className={styles.DoubtSectionContainer}>
     <h1>
-      Ainda com dúvida? <br /> Veja como a DOM vai potencializar o seu negócio
+      Ainda com dúvida? <br /> Veja como a <b>DOM</b> vai potencializar o seu
+      negócio
     </h1>
     <main>
       <div>

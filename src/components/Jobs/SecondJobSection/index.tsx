@@ -22,7 +22,8 @@ const SecondJobSection = () => {
       </div>
       <div>
         <h1 className={`${isValid && 'fadeUpAnimation '}`}>
-          mídias pagas Aumento de <b>100%</b> no ROAS médio
+          Aumento de <b>100%</b> no <br />
+          ROAS médio
         </h1>
         <p className={`${isValid && 'fadeUpAnimation '}`}>
           No decorrer de 90 dias, conseguimos um ROAS médio de 2x, resultado das

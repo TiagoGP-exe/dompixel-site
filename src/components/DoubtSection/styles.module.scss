@@ -32,6 +32,10 @@
     font-family: 'Montserrat', sans-serif;
     text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.79);
     z-index: 2;
+
+    b {
+      color: var(--primary-color);
+    }
   }
 
   p {
