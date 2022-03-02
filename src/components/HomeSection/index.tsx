@@ -32,8 +32,7 @@ const HomeSection = () => {
 
         <div>
           <p className={`${isValid && 'fadeUpAnimation '}`}>
-            Se conecte com seus potenciais <br /> clientes e escale suas
-            <b> vendas. </b>
+            Encontre seus potenciais clientes <br /> e escale suas <b>vendas</b>
           </p>
 
           <Link href='https://bit.ly/dompixelagencia'>

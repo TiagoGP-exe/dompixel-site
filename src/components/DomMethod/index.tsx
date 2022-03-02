@@ -22,9 +22,9 @@ const DomMethod = () => {
             D <b>ominar </b>
           </h2>
           <p className={`${isValid && 'fadeBottomAnimation '}`}>
-            Conquistar território, liderar seu segmento de mercado, torna-se
+            Conquistar território; liderar seu segmento de mercado; tornar-se
             conhecido através da gestão de anúncios estratégicos e recursos
-            audiovisuais que prendem a atenção e vendem mais;
+            audiovisuais que prendam a atenção e vendam mais.
           </p>
         </div>
 
@@ -33,8 +33,8 @@ const DomMethod = () => {
             O <b>timizar </b>
           </h2>
           <p className={`${isValid && 'fadeBottomAnimation '}`}>
-            Aplicar gestão aos processos, foco no que realmente importa, redução
-            de custos não relevantes fazendo mais com menos;
+            Aplicar gestão aos processos, focar no que realmente importa;
+            reduzir custos não relevantes e aumentar a produtividade.
           </p>
         </div>
         <div>
@@ -42,9 +42,8 @@ const DomMethod = () => {
             M <b>etrificar </b>
           </h2>
           <p className={`${isValid && 'fadeBottomAnimation '}`}>
-            Tentar gerenciar sem informação é como pilotar em meio a neblina sem
-            GPS. Para que os processos sejam melhorados a empresa deve perseguir
-            indicadores de performance (KPIs).
+            Perseguir indicadores de performance (KPIs), para acessar
+            informações e melhorar os processos.
           </p>
         </div>
       </main>

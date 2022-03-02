@@ -19,26 +19,28 @@ const AboutSection = () => {
     <section id='about' className={styles.AboutSectionContainer}>
       <div ref={ref} className={styles.AboutSectionContent}>
         <h1 className={`${isValid && 'fadeBottomAnimation '}`}>
-          A parceria estratégica que você precisa para fazer o seu negócio{' '}
+          A parceria estratégica que você precisa para fazer o seu negócio
           <span className={`customizeHighlight ${isValid && ' HighlightTrue'}`}>
             vender mais.
           </span>
         </h1>
         <p className={`${isValid && 'fadeUpAnimation '}`}>
-          Somos uma assessoria completa e possuímos a maior diversidade de
-          skills do mercado.
+          Somos uma assessoria completa e temos a maior diversidade de serviços
+          do mercado.
           <b>
-            {' '}
-            Não visamos apenas uma publicidade que gera curtidas e comentários,
-            mas sim aquela que vende.
+            Não visamos a estratégia que resulte apenas em curtidas e
+            comentários, mas aquela que potencialize suas vendas.
           </b>
         </p>
 
         <p className={`${isValid && 'fadeUpAnimation '}`}>
-          <b>Acreditamos que marketing só é marketing quando vende algo,</b>{' '}
-          para que isso seja possível, nós nos envolvemos estrategicamente na
-          operação dos nossos clientes, desde o treinamento da equipe de
-          atendimento até a consultoria de pós-venda.
+          <b>
+            Acreditamos que o marketing só é marketing quando há sucesso nas
+            vendas.
+          </b>
+          Para que isso aconteça, nos envolvemos estrategicamente na operação
+          dos nossos clientes – desde o treinamento da equipe de atendimento até
+          a consultoria de pós-venda.
         </p>
       </div>
 

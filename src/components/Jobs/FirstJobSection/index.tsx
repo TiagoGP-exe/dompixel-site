@@ -19,10 +19,10 @@ const FirstJobSection = () => {
           mídias pagas
         </h1>
         <p className={`${isValid && 'fadeRightAnimation '}`}>
-          A casa de cervejas especiais que tem muita história para contar. O
-          mestre cervejeiro Elvio Resende já colhe os frutos desta parceria que
-          tem aumentado o engajamento dos seus clientes com novas estratégias e
-          benefícios.
+          A casa de cervejas especiais, Serra Grande, tem muita história para
+          contar. O mestre cervejeiro, Elvio Resende, já colhe os frutos desta
+          parceria que tem aumentado o engajamento dos seus clientes, por meio
+          de novas estratégias e benefícios.
         </p>
       </div>
       <div>

@@ -6,7 +6,7 @@
   min-height: max(100vh, 600px);
 
   background-size: cover;
-
+  background-attachment: fixed;
   background-image: url('../../../public/assets/bg-section-1.png');
   object-fit: cover;
   color: #fff;
@@ -83,7 +83,8 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 580px) {
   .homeSectionContent {
+    background-attachment: initial;
   }
 }

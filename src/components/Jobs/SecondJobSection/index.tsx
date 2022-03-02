@@ -25,10 +25,9 @@ const SecondJobSection = () => {
           mídias pagas Aumento de <b>100%</b> no ROAS médio
         </h1>
         <p className={`${isValid && 'fadeUpAnimation '}`}>
-          Durante 90 dias conseguimos um ROAS médio de 2x no formato de venda
-          direta pelo WhatsApp, ao longo do período desenvolvemos treinamentos
-          de vendas para fortalecer o comercial. Foco total em vendas e um
-          marketing totalmente regionalizado.
+          No decorrer de 90 dias, conseguimos um ROAS médio de 2x, resultado das
+          vendas diretas pelo WhatsApp. Além disso, desenvolvemos treinamento de
+          vendas para impulsionar o comercial.
         </p>
       </div>
 

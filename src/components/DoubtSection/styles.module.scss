@@ -21,6 +21,7 @@
     -webkit-filter: grayscale(100%) opacity(50%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%) opacity(50%);
     background-image: url('../../../public/assets/bg-doubtSection.jpg');
+    background-attachment: fixed;
   }
 
   h1 {
@@ -77,13 +78,16 @@
 @media (max-width: 768px) {
   .DoubtSectionContainer {
     main {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
   }
 }
 
 @media (max-width: 588px) {
   .DoubtSectionContainer {
+    &:before {
+      background-attachment: initial;
+    }
     main {
       div {
         flex: 1;
