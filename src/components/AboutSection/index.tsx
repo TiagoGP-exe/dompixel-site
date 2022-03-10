@@ -37,11 +37,11 @@ const AboutSection = () => {
         <p className={`${isValid && 'fadeUpAnimation '}`}>
           <b>
             Acreditamos que o marketing só é marketing quando há sucesso nas
-            vendas.
+            vendas.{' '}
           </b>
-          Para que isso aconteça, nos envolvemos estrategicamente na operação
-          dos nossos clientes – desde o treinamento da equipe de atendimento até
-          a consultoria de pós-venda.
+          Para isso acontecer, nos envolvemos estrategicamente na operação dos
+          nossos clientes – desde o treinamento da equipe de atendimento até a
+          consultoria de pós-venda.
         </p>
       </div>
 

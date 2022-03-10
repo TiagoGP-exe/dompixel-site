@@ -11,6 +11,7 @@ import SecondJobSection from '../components/Jobs/SecondJobSection'
 import PowerBi from '../components/PowerBi'
 import TeamSection from '../components/TeamSection'
 import TestionialSection from '../components/TestimonialSection'
+import YouDoing from '../components/YouDoing'
 
 const Home: NextPage = () => (
   <>
@@ -23,6 +24,7 @@ const Home: NextPage = () => (
     <Certificates />
     <PowerBi />
     <TestionialSection />
+    <YouDoing />
     <DoubtSection />
     <Footer />
   </>

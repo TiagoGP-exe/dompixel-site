@@ -18,8 +18,8 @@
     height: 100%;
     background-size: cover;
 
-    -webkit-filter: grayscale(100%) opacity(50%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%) opacity(50%);
+    -webkit-filter: grayscale(100%) opacity(30%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) opacity(30%);
     background-image: url('../../../public/assets/bg-doubtSection.jpg');
     background-attachment: fixed;
   }

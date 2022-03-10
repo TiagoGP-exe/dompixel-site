@@ -34,9 +34,10 @@ const iconsName: IconsNameProps[] = [
 const imagesName = ['partner', 'google-analytics', 'facebook-marketing']
 
 const imagesPlaformNames: IconsNameProps[] = [
-  { name: 'BsYoutube', color: '#FF0000' },
-  { name: 'AiFillInstagram', color: '#E4405F' },
-  { name: 'SiGoogleads', color: '#4285F4' },
+  { name: 'BsYoutube', color: '#fff' },
+  { name: 'AiFillInstagram', color: '#fff' },
+  { name: 'SiGoogleads', color: '#fff' },
+  { name: 'BsFacebook', color: '#fff' },
 ]
 
 const Certificates = () => {
@@ -56,7 +57,7 @@ const Certificates = () => {
         )}
       </main>
 
-      <h1>Plataforma que Anunciamos</h1>
+      <h1>Plataformas que anunciamos</h1>
       <div className={styles.platform}>
         {imagesPlaformNames.map(({ name, color }) =>
           getIcon({ icon: name, color: color, size: 64 })

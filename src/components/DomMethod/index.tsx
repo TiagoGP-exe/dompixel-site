@@ -33,7 +33,7 @@ const DomMethod = () => {
             O <b>timizar </b>
           </h2>
           <p className={`${isValid && 'fadeBottomAnimation '}`}>
-            Aplicar gestão aos processos, focar no que realmente importa;
+            Aplicar gestão aos processos; focar no que realmente importa;
             reduzir custos não relevantes e aumentar a produtividade.
           </p>
         </div>
