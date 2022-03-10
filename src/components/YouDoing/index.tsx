@@ -23,9 +23,7 @@ const YouDoing = () => {
           height='100%'
           src='https://www.youtube.com/embed/niDwxtMX3YE'
           title='YouTube video player'
-          frameborder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-          allowfullscreen
           className={`${isValid && 'fadeUpAnimation'}`}
         ></iframe>
       </main>
