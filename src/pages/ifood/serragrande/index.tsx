@@ -4,8 +4,6 @@ import styles from './styles.module.scss'
 const Serragrande = () => {
   useEffect(() => {
     ;(() => {
-      let time
-
       const desktopFallback =
           'https://www.ifood.com.br/delivery/cuiaba-mt/serra-grande-a-casa-da-cerveja-morada-do-ouro/98873ec5-eb1f-4dff-840f-5c9fa40adf94',
         mobileFallback =
@@ -27,8 +25,6 @@ const Serragrande = () => {
       } else {
         window?.location = desktopFallback
       }
-
-      return () => clearTimeout(time)
     })()
   }, [])
 
