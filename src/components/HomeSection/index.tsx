@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import { useRouter } from 'next/router'
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { useIntersectionObserver } from 'usehooks-ts'
 import styles from './styles.module.scss'
 
@@ -12,8 +11,6 @@ const HomeSection = () => {
   })
 
   const isValid = entry?.isIntersecting
-
-  const router = useRouter()
 
   return (
     <section ref={ref} id='home' className={styles.homeSectionContent}>
