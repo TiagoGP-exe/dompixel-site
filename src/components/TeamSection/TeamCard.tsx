@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React, { FC, useRef } from 'react'
 import { useIntersectionObserver } from 'usehooks-ts'
 import { removeAccents } from '../../utils/string'

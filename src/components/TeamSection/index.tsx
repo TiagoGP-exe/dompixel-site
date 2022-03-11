@@ -1,4 +1,5 @@
 import styles from './styles.module.scss'
+import React from 'react'
 import TeamCard, { TeamCardProps } from './TeamCard'
 
 const numberOfCards: TeamCardProps[] = [

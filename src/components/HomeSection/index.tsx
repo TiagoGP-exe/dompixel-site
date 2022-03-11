@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useRef } from 'react'
+import React, { useRef } from 'react'
 import { useIntersectionObserver } from 'usehooks-ts'
 import styles from './styles.module.scss'
 
