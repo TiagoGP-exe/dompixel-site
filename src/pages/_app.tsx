@@ -1,9 +1,24 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 import '../../styles/globals.scss'
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
+  const FB_PIXEL = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID
+
+  useEffect(() => {
+    ;(async () => {
+      if (!FB_PIXEL) return
+      const { default: ReactPixel } = await import('react-facebook-pixel')
+      ReactPixel.init(FB_PIXEL, undefined, {
+        autoConfig: true,
+        debug: true,
+      })
+      ReactPixel.pageView()
+      ReactPixel.track('ViewContent')
+    })()
+  }, [])
+
   return (
     <>
       <Head>
