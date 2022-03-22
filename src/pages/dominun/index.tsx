@@ -7,9 +7,9 @@ const Dominun = () => {
       const desktopFallback: any =
         'https://www.ifood.com.br/delivery/cuiaba-mt/serra-grande-a-casa-da-cerveja-morada-do-ouro/98873ec5-eb1f-4dff-840f-5c9fa40adf94'
       const mobileFallback: any =
-        'https://www.ifood.com.br/delivery/cuiaba-mt/serra-grande-a-casa-da-cerveja-morada-do-ouro/98873ec5-eb1f-4dff-840f-5c9fa40adf94'
+        'ident://com.dompixel.dominun/delivery/cuiaba-mt/serra-grande-a-casa-da-cerveja-morada-do-ouro/98873ec5-eb1f-4dff-840f-5c9fa40adf94#Intent;package=br.com.brainweb.ifood;scheme=https;end'
       const app: any =
-        'intent://com.dompixel.dominun/delivery/cuiaba-mt/serra-grande-a-casa-da-cerveja-morada-do-ouro/98873ec5-eb1f-4dff-840f-5c9fa40adf94#Intent;package=br.com.brainweb.ifood;scheme=https;end'
+        'com.dompixel.dominun://delivery/cuiaba-mt/serra-grande-a-casa-da-cerveja-morada-do-ouro/98873ec5-eb1f-4dff-840f-5c9fa40adf94#Intent;package=br.com.brainweb.ifood;scheme=https;end'
       const appIos: any =
         'com.dompixel.dominun://restaurant/98873ec5-eb1f-4dff-840f-5c9fa40adf94'
 
