@@ -1,3 +1,5 @@
+/* eslint @typescript-eslint/no-extra-semi: 0 */
+
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import React, { FC, useEffect } from 'react'
