@@ -9,10 +9,8 @@ const Dominun = () => {
         'https://play.google.com/store/apps/details?id=com.dompixel.dominun',
         'https://apps.apple.com/br/app/dominun/id1552500067',
       ]
-      const app: any =
-        'com.dompixel.dominun://delivery/cuiaba-mt/serra-grande-a-casa-da-cerveja-morada-do-ouro/98873ec5-eb1f-4dff-840f-5c9fa40adf94#Intent;package=br.com.brainweb.ifood;scheme=https;end'
-      const appIos: any =
-        'com.dompixel.dominun://restaurant/98873ec5-eb1f-4dff-840f-5c9fa40adf94'
+      const app: any = 'com.dompixel.dominun://app'
+      const appIos: any = 'com.dompixel.dominun://app'
 
       if (/Android/i.test(navigator.userAgent)) {
         window.location = app
