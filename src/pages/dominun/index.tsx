@@ -10,9 +10,9 @@ const Dominun = () => {
         'https://apps.apple.com/br/app/dominun/id1552500067',
       ]
       const app: any =
-        'com.dompixel.dominun://?data=eyJ0ZW5hbnRJZCI6InNhb2pvYW9ib3NjbyIsInR5cGUiOiJzY3JlZW4iLCJzY3JlZW4iOiJPZmZlcnxFdmVudE9mZmVyIn0='
+        'com.dompixel.dominun://eyJ0ZW5hbnRJZCI6InNhb2pvYW9ib3NjbyIsInR5cGUiOiJzY3JlZW4iLCJzY3JlZW4iOiJPZmZlcnxFdmVudE9mZmVyIn0='
       const appIos: any =
-        'com.dompixel.dominun://?data=eyJ0ZW5hbnRJZCI6InNhb2pvYW9ib3NjbyIsInR5cGUiOiJzY3JlZW4iLCJzY3JlZW4iOiJPZmZlcnxFdmVudE9mZmVyIn0='
+        'com.dompixel.dominun://eyJ0ZW5hbnRJZCI6InNhb2pvYW9ib3NjbyIsInR5cGUiOiJzY3JlZW4iLCJzY3JlZW4iOiJPZmZlcnxFdmVudE9mZmVyIn0='
 
       if (/Android/i.test(navigator.userAgent)) {
         window.location = app
