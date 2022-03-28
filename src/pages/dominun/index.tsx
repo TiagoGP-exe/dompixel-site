@@ -4,17 +4,21 @@ import styles from './styles.module.scss'
 const Dominun = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      const urlSearchParams = new URLSearchParams(window.location.search)
+      const params = Object.fromEntries(urlSearchParams.entries())
+
+      console.log(params)
       const desktopFallback: any = 'https://dompixel.app/'
       const mobileFallback: any = [
         'https://play.google.com/store/apps/details?id=com.dompixel.dominun',
         'https://apps.apple.com/br/app/dominun/id1552500067',
       ]
-      const app: any =
-        'com.dompixel.dominun://eyJ0ZW5hbnRJZCI6InNhb2pvYW9ib3NjbyIsInR5cGUiOiJzY3JlZW4iLCJzY3JlZW4iOiJPZmZlcnxFdmVudE9mZmVyIn0='
-      const appIos: any =
-        'com.dompixel.dominun://eyJ0ZW5hbnRJZCI6InNhb2pvYW9ib3NjbyIsInR5cGUiOiJzY3JlZW4iLCJzY3JlZW4iOiJPZmZlcnxFdmVudE9mZmVyIn0='
+      const app: any = 'com.dompixel.dominun://'
+      const appIos: any = 'com.dompixel.dominun:/'
 
       if (/Android/i.test(navigator.userAgent)) {
+        console.log(app)
+        return
         window.location = app
         setTimeout(() => {
           window.location = mobileFallback[0]
@@ -23,7 +27,7 @@ const Dominun = () => {
         window.location = appIos
         setTimeout(() => {
           window.location = mobileFallback[1]
-        }, 1000)
+        }, 3000)
       } else {
         window.location = desktopFallback
       }
