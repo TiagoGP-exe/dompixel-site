@@ -13,12 +13,10 @@ const Dominun = () => {
         'https://play.google.com/store/apps/details?id=com.dompixel.dominun',
         'https://apps.apple.com/br/app/dominun/id1552500067',
       ]
-      const app: any = 'com.dompixel.dominun://'
-      const appIos: any = 'com.dompixel.dominun:/'
+      const app: any = `com.dompixel.dominun://?data=${params.data}`
+      const appIos: any = `com.dompixel.dominun:/?data=${params.data}`
 
       if (/Android/i.test(navigator.userAgent)) {
-        console.log(app)
-        return
         window.location = app
         setTimeout(() => {
           window.location = mobileFallback[0]
