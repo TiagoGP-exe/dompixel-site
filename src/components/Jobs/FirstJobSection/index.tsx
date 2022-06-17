@@ -34,7 +34,7 @@ const FirstJobSection = () => {
       </div>
 
       <video autoPlay loop muted className={styles.video}>
-        <source src='/assets/serra-grande.m4v' type='video/mp4' />
+        <source src='/assets/serra-grande.mp4' type='video/mp4' />
       </video>
     </section>
   )
