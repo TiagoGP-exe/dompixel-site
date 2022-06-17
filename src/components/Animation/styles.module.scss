@@ -1,0 +1,31 @@
+.bodyAnimation {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 500px;
+  background: linear-gradient(180deg, #054dfc, #05aafc);
+
+  .containerAnimation {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    place-content: center;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+  }
+  
+  .item {
+    width: 56%;
+    overflow: visible;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+}
+

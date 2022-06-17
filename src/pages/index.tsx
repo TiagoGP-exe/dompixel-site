@@ -12,20 +12,23 @@ import TestionialSection from '../components/TestimonialSection'
 import YouDoing from '../components/YouDoing'
 
 import { lazy } from 'react'
+import Animation from '../components/Animation'
+import dynamic from 'next/dynamic'
 
-const FirstJobSectionComponent = lazy(
+const DynamicFirstJobSection = dynamic(
   () => import('../components/Jobs/FirstJobSection')
 )
-const SecondJobSectionComponent = lazy(
+const DynamicSecondJobSection = dynamic(
   () => import('../components/Jobs/SecondJobSection')
 )
 
 const Home: NextPage = () => (
   <>
+    <Animation />
     <HomeSection />
     <AboutSection />
-    <FirstJobSectionComponent />
-    <SecondJobSectionComponent />
+    <DynamicFirstJobSection />
+    <DynamicSecondJobSection />
     <DomMethod />
     <TeamSection />
     <Certificates />
