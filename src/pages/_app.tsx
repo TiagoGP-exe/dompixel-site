@@ -5,7 +5,7 @@ import Head from 'next/head'
 import React, { FC, useEffect } from 'react'
 import '../../styles/globals.scss'
 
-const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
+const App: FC<AppProps> = ({ Component, pageProps }) => {
   const FB_PIXEL = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID
 
   useEffect(() => {
@@ -84,4 +84,4 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   )
 }
 
-export default MyApp
+export default App

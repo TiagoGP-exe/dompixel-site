@@ -11,10 +11,16 @@ a {
   --dark-color: #000;
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+  word-spacing: 0px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+
   ::selection {
     background-color: rgb(224, 224, 224);
     color: rgb(87, 82, 107);

@@ -14,7 +14,7 @@ const iconsName: IconsNameProps[] = [
   { name: 'SiJavascript', color: '#F7DF1E' },
   { name: 'DiCss3', color: '#1572B6' },
   // { name: 'FaYarn', color: '#2C8EBB' },
-  // { name: 'FaSass', color: '#CC6699' },
+  // { name: 'FaSass', color: '#FF6C37' },
   { name: 'SiTypescript', color: '#3178C6' },
   { name: 'FaPhp', color: '#777BB4' },
   // { name: 'SiVisualstudiocode', color: '#007ACC' },
@@ -29,39 +29,37 @@ const iconsName: IconsNameProps[] = [
   // { name: 'SiElectron', color: '#47848F' },
   // { name: 'SiExpo', color: '#2869c9' },
   { name: 'FaNode', color: '#339933' },
+  { name: 'BsYoutube', color: '#FF2D20' },
+  { name: 'FaInstagram', color: '#7952B3' },
+  { name: 'SiGoogleads', color: '#EEDC53' },
+  { name: 'FaFacebook', color: '#007ACC' },
 ]
 
 const imagesName = ['partner', 'google-analytics', 'facebook-marketing']
 
-const imagesPlaformNames: IconsNameProps[] = [
-  { name: 'BsYoutube', color: '#fff' },
-  { name: 'AiFillInstagram', color: '#fff' },
-  { name: 'SiGoogleads', color: '#fff' },
-  { name: 'BsFacebook', color: '#fff' },
-]
-
 const Certificates = () => {
   return (
     <section className={styles.ContainerCertificates}>
-      <h1>Certificações e Tecnologias</h1>
+      <h1>Confiada por mais de 100 empressas e startups</h1>
 
-      <header>
-        {imagesName.map(image => (
-          <img key={image} src={`/assets/${image}.png`} alt='' />
-        ))}
-      </header>
-
-      <main>
-        {iconsName.map(({ name, color }) =>
-          getIcon({ icon: name, color: color, size: 64 })
-        )}
-      </main>
-
-      <h1>Plataformas que anunciamos</h1>
-      <div className={styles.platform}>
-        {imagesPlaformNames.map(({ name, color }) =>
-          getIcon({ icon: name, color: color, size: 64 })
-        )}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          flex: 2,
+          gap: '0.75rem',
+        }}
+      >
+        <main>
+          <header>
+            {imagesName.map(image => (
+              <img key={image} src={`/assets/${image}.png`} alt='' />
+            ))}
+          </header>
+          {iconsName.map(({ name, color }) =>
+            getIcon({ icon: name, color: color, size: 28 })
+          )}
+        </main>
       </div>
     </section>
   )

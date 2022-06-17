@@ -22,8 +22,8 @@
     height: calc(0.56 * min(1080px, 100vw));
     max-width: 100%;
     max-height: 1080px;
-    -webkit-clip-path: inset(4px round 10px 10px 10px 10px);
-    clip-path: inset(3px round 1.3rem 1.3rem 1.3rem 1.3rem);
+    -webkit-clip-path: inset(0px round 10px 10px 10px 10px);
+    clip-path: inset(0.6rem round 1.3rem 1.3rem 1.3rem 1.3rem);
   }
 
   main {

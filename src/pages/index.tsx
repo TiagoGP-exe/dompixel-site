@@ -6,19 +6,26 @@ import DomMethod from '../components/DomMethod'
 import DoubtSection from '../components/DoubtSection'
 import Footer from '../components/Footer'
 import HomeSection from '../components/HomeSection'
-import FirstJobSection from '../components/Jobs/FirstJobSection'
-import SecondJobSection from '../components/Jobs/SecondJobSection'
 import PowerBi from '../components/PowerBi'
 import TeamSection from '../components/TeamSection'
 import TestionialSection from '../components/TestimonialSection'
 import YouDoing from '../components/YouDoing'
 
+import { lazy } from 'react'
+
+const FirstJobSectionComponent = lazy(
+  () => import('../components/Jobs/FirstJobSection')
+)
+const SecondJobSectionComponent = lazy(
+  () => import('../components/Jobs/SecondJobSection')
+)
+
 const Home: NextPage = () => (
   <>
     <HomeSection />
     <AboutSection />
-    <FirstJobSection />
-    <SecondJobSection />
+    <FirstJobSectionComponent />
+    <SecondJobSectionComponent />
     <DomMethod />
     <TeamSection />
     <Certificates />

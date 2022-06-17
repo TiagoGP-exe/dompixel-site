@@ -21,7 +21,7 @@ const YouDoing = () => {
         <iframe
           width='100%'
           height='100%'
-          src='https://www.youtube.com/embed/niDwxtMX3YE'
+          src='https://www.youtube.com/embed/nsoW6U-cCWU'
           title='YouTube video player'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           className={`${isValid && 'fadeUpAnimation'}`}
